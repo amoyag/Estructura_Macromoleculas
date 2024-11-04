@@ -1,2 +1,3 @@
-# Estructura_Macromoleculas
-Prácticas de Estructura de Macromoléculas
+# Prácticas Estructura de Macromoleculas
+
+[Structure Analysis with PyMOL]()
