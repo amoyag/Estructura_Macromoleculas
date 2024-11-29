@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="multichoice">
+    <name>
+        <text>Alpha Helix Psi Angle</text>
+    </name>
+    <questiontext format="html">
+        <text>What is the typical psi (ψ) angle in an α-helix?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The psi angle works together with the phi angle to create the characteristic α-helix shape. In PyMOL, you can measure these angles using the measurement wizard and selecting four consecutive atoms in the protein backbone.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>+60°</text>
+        <feedback>
+            <text>This value is incorrect. The psi angle in α-helices is negative and closer to -45°.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>-45°</text>
+        <feedback>
+            <text>Correct! The psi angle in α-helices is typically around -45°. Together with the phi angle of -60°, these values create the characteristic right-handed helical shape.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>+120°</text>
+        <feedback>
+            <text>This value is more typical for β-sheets. α-helices have a negative psi angle around -45°.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>-120°</text>
+        <feedback>
+            <text>While this is a negative angle, it's too large for an α-helix. The correct value is closer to -45°.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Secondary Structure Coloring</text>
+    </name>
+    <questiontext format="html">
+        <text>In the exercise analyzing secondary structure elements, how are loops colored when using the secondary structure coloring scheme?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>PyMOL uses different colors to distinguish between secondary structure elements (α-helices, β-sheets, and loops). This helps visualize the organization of the protein structure.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>Blue</text>
+        <feedback>
+            <text>Blue is typically used for β-sheets in this coloring scheme, not loops.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Firebrick</text>
+        <feedback>
+            <text>Firebrick (red) is used for α-helices in this coloring scheme, not loops.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>White</text>
+        <feedback>
+            <text>Correct! In this coloring scheme, loops are colored white to distinguish them from the more ordered secondary structure elements (α-helices and β-sheets).</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Yellow</text>
+        <feedback>
+            <text>Yellow is not used for any secondary structure elements in this basic coloring scheme.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Beta Sheet Analysis</text>
+    </name>
+    <questiontext format="html">
+        <text>When analyzing β-sheets in PyMOL, which representation is most useful for examining hydrogen bonds between strands?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>Different molecular representations in PyMOL serve different purposes. Some are better for overall structure visualization, while others are more suitable for detailed analysis of specific interactions.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>Cartoon</text>
+        <feedback>
+            <text>While cartoon representation is good for overall secondary structure visualization, it doesn't show the atomic details needed to examine hydrogen bonds.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Surface</text>
+        <feedback>
+            <text>Surface representation shows the molecular surface but hides the atomic details needed to analyze hydrogen bonds.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>Sticks</text>
+        <feedback>
+            <text>Correct! Stick representation shows the atomic positions and bonding clearly, making it ideal for analyzing hydrogen bonds between β-strands.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Spheres</text>
+        <feedback>
+            <text>Sphere representation can be too crowded and doesn't clearly show the bonding patterns needed for hydrogen bond analysis.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Residue Selection Command</text>
+    </name>
+    <questiontext format="html">
+        <text>Which PyMOL command would you use to select residues 141-159 in chain A?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>PyMOL uses a specific syntax for selecting parts of molecules. Understanding this syntax is crucial for analyzing specific regions of protein structures.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>select res 141-159, A</text>
+        <feedback>
+            <text>This syntax is incorrect. PyMOL uses 'resi' for residue numbers, not 'res'.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>select hoja1, resi 141-159 and chain A</text>
+        <feedback>
+            <text>Correct! This command creates a selection named 'hoja1' containing residues 141-159 of chain A using the proper PyMOL selection syntax.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>select chain A, residues 141-159</text>
+        <feedback>
+            <text>This syntax is incorrect. PyMOL uses 'resi' for residue numbers and requires the 'and' operator.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>select 141:159:A</text>
+        <feedback>
+            <text>While this syntax might work in other programs, it's not the correct format for PyMOL selections.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Measure Tool Usage</text>
+    </name>
+    <questiontext format="html">
+        <text>To measure the distance between atoms in PyMOL, which tool should you use?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>PyMOL provides several measurement tools that allow users to analyze structural features like distances, angles, and dihedrals.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+        <text>Measurement Wizard</text>
+        <feedback>
+            <text>Correct! The Measurement Wizard is accessed through the Mouse menu and allows you to measure distances by clicking on atoms.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Display Distance</text>
+        <feedback>
+            <text>This is not the correct name of the tool in PyMOL. The proper tool is called the Measurement Wizard.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Calculate Length</text>
+        <feedback>
+            <text>This is not a tool in PyMOL. Use the Measurement Wizard to measure distances between atoms.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Ruler Tool</text>
+        <feedback>
+            <text>While this might seem intuitive, PyMOL uses the Measurement Wizard for measuring distances, not a ruler tool.</text>
+        </feedback>
+    </answer>
+</question>
+
+</quiz>

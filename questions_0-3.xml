@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Question about H-bond distances in alpha helix -->
+<question type="multichoice">
+    <name>
+        <text>H-bonds alpha-helix</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p>What is the typical distance range for a hydrogen bond in the backbone of an alpha-helix?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>Hydrogen bond distances are crucial parameters in protein structure that reflect the strength and geometry of these important stabilizing interactions. In α-helices, these distances are highly conserved due to the regular geometric constraints of the helical structure. Understanding these typical distances helps in validating structural models and identifying potential structural anomalies.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p>2.3 - 3.5 Å</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! This range represents optimal hydrogen bonding distances in protein structures. The typical 2.3-3.5 Å distance allows for strong hydrogen bonds while maintaining the geometric constraints of the α-helix. This specific distance range helps create the characteristic 3.6 residues per turn of the α-helix.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>1.0 - 1.5 Å</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. This distance is too short for hydrogen bonds in proteins - it's closer to the length of covalent bonds. For example, a typical C-C single bond is about 1.54 Å. Hydrogen bonds are longer-range interactions than covalent bonds.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>3.5 - 4.5 Å</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While some hydrogen bonds can exist at these distances, they would be quite weak. This range is generally too long for the stable hydrogen bonds that maintain α-helix structure. The optimal range is shorter, allowing for stronger interactions.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>5.0 - 6.0 Å</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. These distances are far too long for hydrogen bonds. At this range, the interaction would be too weak to provide meaningful structural stability. For comparison, this is nearly twice the optimal hydrogen bond distance in proteins.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+<!-- Question about measuring H-bonds in beta sheets -->
+<question type="multichoice">
+    <name>
+        <text>H-bonds beta sheet</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p>When measuring hydrogen bond distances between two beta sheets, which atoms should be selected in PyMOL's Measurement Wizard to obtain the correct H-bond distance?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>Hydrogen bonds between β-sheets are key structural features that stabilize this important secondary structure element. Understanding which atoms to measure is crucial for analyzing these interactions in PyMOL. While hydrogen atoms are involved in the bonds, they're typically not visible in crystal structures, so we measure between the donor and acceptor heavy atoms.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p>Carbonyl oxygen (O) and amide nitrogen (N)</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! In β-sheets, hydrogen bonds form between the carbonyl oxygen (C=O) of one strand and the amide nitrogen (N-H) of the adjacent strand. These atoms are easily visible in PyMOL and represent the donor and acceptor of the hydrogen bond. The regular pattern of these bonds creates the characteristic β-sheet structure.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>Carbonyl carbon (C) and alpha carbon (Cα)</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. Neither carbonyl carbon nor alpha carbon participates directly in hydrogen bonding. These carbon atoms form the backbone scaffold but lack the electronegativity needed for hydrogen bond formation. The key atoms are the polar O and N atoms.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>Alpha carbon (Cα) and nitrogen (N)</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While the nitrogen is indeed involved in hydrogen bonding, the alpha carbon is not. Hydrogen bonds require both a donor and an acceptor atom with significant electronegativity - the alpha carbon doesn't meet this criterion.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>Hydrogen (H) and carbonyl carbon (C)</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While the hydrogen atom is part of the hydrogen bond, it's usually not visible in protein structures determined by X-ray crystallography. Additionally, the carbonyl carbon doesn't participate directly in the hydrogen bond - its attached oxygen does.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+</quiz>

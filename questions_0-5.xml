@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Question about residue identification -->
+<question type="multichoice">
+    <name>
+        <text>select residues II</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p>Which are the residues from 44 to 48 in chain A?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>Identifying specific amino acid sequences in proteins is a fundamental skill in structural biology. PyMOL provides several ways to examine sequences, including the sequence viewer and selection commands. When analyzing protein structures, it's important to be able to relate the one-letter amino acid codes to specific positions in the structure and understand how these residues might contribute to the protein's function or structure.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p>DEVNQ</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! This sequence represents five amino acids: Aspartate (D), Glutamate (E), Valine (V), Asparagine (N), and Glutamine (Q). You can verify this in PyMOL by using the sequence viewer or by selecting these residues and labeling them. Notice how this sequence includes both charged (D, E) and neutral (V, N, Q) residues, which might have implications for the protein's local structure and function.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>LLLD</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. This sequence (Leucine-Leucine-Leucine-Aspartate) is not found in positions 44-48 of chain A. When checking sequences in PyMOL, remember you can use both the sequence viewer and the structure itself. The sequence viewer shows the full amino acid sequence, while the structure can be labeled to show residue identities.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>RLPS</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. This sequence (Arginine-Leucine-Proline-Serine) is not found in positions 44-48 of chain A. When identifying residues, make sure you're looking at the correct chain and residue numbers. You can verify the sequence using PyMOL's sequence viewer or by selecting and labeling the residues in question.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>INVD</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. This sequence (Isoleucine-Asparagine-Valine-Aspartate) is not found in positions 44-48 of chain A. When analyzing protein sequences, it's helpful to use PyMOL's sequence viewer in conjunction with the structure view to ensure you're examining the correct region of the protein.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+<!-- Question about PyMOL fetch command -->
+<question type="multichoice">
+    <name>
+        <text>Which command in PyMOL is used to fetch the nicotinic acetylcholine receptor?</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p>Which command in PyMOL is used to automatically fetch the nicotinic acetylcholine receptor by its PDB ID?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>PyMOL provides several ways to load molecular structures, but the most convenient method for accessing structures from the Protein Data Bank (PDB) is the 'fetch' command. This command automatically downloads the structure file from the PDB and loads it into PyMOL. Understanding how to retrieve structures from the PDB is a fundamental skill in structural biology analysis.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p><code>import 2BG9</code></p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While 'import' is a valid Python command, it's not the correct PyMOL command for retrieving structures from the PDB. 'import' is used in Python programming to load modules, but PyMOL uses different commands for loading molecular structures.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p><code>load 2BG9</code></p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While 'load' is a valid PyMOL command, it's used to load structure files that are already on your local computer. It cannot automatically download structures from the PDB. For that functionality, you need to use the 'fetch' command.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p><code>fetch 2BG9</code></p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! The 'fetch' command is specifically designed to download and load structures directly from the PDB. When you use this command, PyMOL will:
+            1. Connect to the PDB server
+            2. Download the structure file for PDB ID 2BG9
+            3. Load the structure into your PyMOL session
+            This command makes it easy to access and analyze any structure in the PDB database.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p><code>get 2BG9</code></p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While 'get' might seem intuitive, it's not a valid PyMOL command for retrieving structures. PyMOL uses specific commands for different operations, and 'fetch' is the correct command for downloading and loading structures from the PDB.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+</quiz>

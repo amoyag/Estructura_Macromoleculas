@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="multichoice">
+    <name>
+        <text>PyMOL Command: Fetching Structures</text>
+    </name>
+    <questiontext format="html">
+        <text>When using PyMOL to analyze protein structures, which command allows you to fetch a structure directly from the PDB?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>PyMOL provides several commands for working with structures, but 'fetch' is specifically designed to download and load structures directly from the Protein Data Bank using their PDB ID.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>get</text>
+        <feedback>
+            <text>'get' is not a valid PyMOL command for retrieving structures. The correct command is 'fetch'.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>download</text>
+        <feedback>
+            <text>'download' is not a valid PyMOL command. While it might seem intuitive, PyMOL uses 'fetch' for this purpose.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>fetch</text>
+        <feedback>
+            <text>Correct! The 'fetch' command is used to download and load structures directly from the PDB. For example: 'fetch 2BG9'</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>retrieve</text>
+        <feedback>
+            <text>'retrieve' is not a valid PyMOL command. Use 'fetch' to download structures from the PDB.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Beta Sheet Hydrogen Bond Distance</text>
+    </name>
+    <questiontext format="html">
+        <text>When measuring hydrogen bonds between β-strands in PyMOL, what is the typical distance between the backbone N and O atoms?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>Hydrogen bonds between β-strands are crucial for maintaining the sheet structure. The distance between donor and acceptor atoms (N and O) in these hydrogen bonds is highly conserved and can be measured using PyMOL's measurement tool.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>1.5-2.0 Å</text>
+        <feedback>
+            <text>This distance is too short. It's closer to the length of a covalent bond rather than a hydrogen bond.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>2.8-3.0 Å</text>
+        <feedback>
+            <text>Correct! This is the typical distance for hydrogen bonds in β-sheets, representing the optimal distance for this type of non-covalent interaction.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>3.8-4.2 Å</text>
+        <feedback>
+            <text>This distance is too long for effective hydrogen bonding between β-strands. The actual distance is closer to 2.8-3.0 Å.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>4.5-5.0 Å</text>
+        <feedback>
+            <text>This distance is much too long for hydrogen bonding. At this distance, the interaction would be too weak to maintain the β-sheet structure.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Alpha Helix Consecutive Residue Distance</text>
+    </name>
+    <questiontext format="html">
+        <text>In an α-helix, what is the typical distance between consecutive Cα atoms (n and n+1)?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The distance between consecutive Cα atoms in protein structures is highly conserved due to the constraints of peptide bond geometry and is particularly regular in α-helices.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>2.0 Å</text>
+        <feedback>
+            <text>This distance is too short - it's less than the length of a peptide bond. The actual distance between consecutive Cα atoms is 3.8 Å.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>3.8 Å</text>
+        <feedback>
+            <text>Correct! 3.8 Å is the standard distance between consecutive Cα atoms in protein structures, including α-helices.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>4.5 Å</text>
+        <feedback>
+            <text>This distance is too long for consecutive Cα atoms. The correct distance is 3.8 Å.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>5.4 Å</text>
+        <feedback>
+            <text>This is much too long for consecutive Cα atoms. The correct distance is 3.8 Å.</text>
+        </feedback>
+    </answer>
+</question>
+</quiz>

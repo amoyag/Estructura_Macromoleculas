@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Question about H-bonds in alpha helix -->
+<question type="multichoice">
+    <name>
+        <text>H-bonds alpha II</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">When measuring a hydrogen bond distance in PyMOL, which atoms in the backbone of an alpha-helix should be selected for the measurement?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>Hydrogen bonds in α-helices are crucial for maintaining their stable helical structure. In protein structures, these bonds form between backbone atoms of residues that are separated by approximately one turn of the helix. Understanding which atoms participate in these bonds is essential for analyzing protein structure.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p>Carbonyl oxygen and amide nitrogen</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! The carbonyl oxygen (C=O) of residue n acts as the hydrogen bond acceptor, while the amide nitrogen (N-H) of residue n+4 acts as the donor. This regular pattern of hydrogen bonding helps stabilize the helical structure and contributes to its characteristic shape.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>Alpha carbon and carbonyl oxygen</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. Alpha carbons (Cα) don't participate in hydrogen bonding. They are part of the protein backbone but lack the necessary electronegativity to form hydrogen bonds. The key participants are the carbonyl oxygen (acceptor) and amide nitrogen (donor).</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>Nitrogen and alpha carbon</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While the amide nitrogen is involved in hydrogen bonding, it pairs with a carbonyl oxygen, not an alpha carbon. Alpha carbons serve as junction points in the protein backbone but don't participate in hydrogen bonding.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>Hydrogen and alpha carbon</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While hydrogens are involved in hydrogen bonding, they're usually not visible in protein structures determined by X-ray crystallography. Additionally, alpha carbons don't participate in hydrogen bonding. We measure the distance between N and O atoms instead.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+<!-- Question about H-bonds stabilizing alpha helix -->
+<question type="multichoice">
+    <name>
+        <text>H-bonds alpha III</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p>Which of the following describes a hydrogen bond's role in stabilizing the alpha-helix structure in proteins?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>The α-helix is one of the most common secondary structures in proteins. Its stability comes from a regular pattern of hydrogen bonds between backbone atoms. Understanding this pattern is crucial for comprehending protein structure and stability.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>Bonds form between side chains of adjacent amino acids</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While side chains can form hydrogen bonds, the primary stabilizing force in α-helices comes from backbone hydrogen bonds. Side chain interactions may provide additional stability but aren't the defining feature of the α-helix structure.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p>Bonds form between the N-H group of one amino acid and the C=O group four residues ahead</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! This pattern, known as i+4 hydrogen bonding, is the defining characteristic of α-helices. Each hydrogen bond connects residue i to residue i+4, creating a regular helical structure with 3.6 residues per turn. This spacing allows for optimal hydrogen bond geometry and creates the characteristic α-helix shape.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>Bonds form between the central carbon atoms of each amino acid</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. Carbon atoms (including the central Cα) do not form hydrogen bonds. The stabilizing hydrogen bonds in α-helices involve the polar backbone atoms (N-H and C=O groups) rather than the carbon atoms.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>Bonds form between the N-H group of one amino acid and the C=O group five residues ahead</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While this represents the right types of atoms, the spacing is wrong. α-helices use i+4 spacing (not i+5), which creates the optimal geometry for hydrogen bonding and results in 3.6 residues per turn.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+</quiz>

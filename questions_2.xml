@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<question type="multichoice">
+    <name>
+        <text>Beta Sheet Phi Angle</text>
+    </name>
+    <questiontext format="html">
+        <text>When measuring the backbone dihedral angles of a residue in a β-sheet, what is the typical phi (φ) angle?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The phi (φ) angle in protein structures is one of the two main backbone dihedral angles. In β-sheets, this angle adopts a characteristic value that can be measured using PyMOL's measurement tools. Understanding these angles is crucial for analyzing protein secondary structure.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>+60°</text>
+        <feedback>
+            <text>This value is incorrect for β-sheets. +60° is not commonly observed in protein secondary structures.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>-60°</text>
+        <feedback>
+            <text>While -60° is a common phi angle in α-helices, it's not the typical value for β-sheets.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>-120°</text>
+        <feedback>
+            <text>Correct! The phi angle in β-sheets is typically around -120°. This can be verified by measuring the dihedral angle in PyMOL.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>+120°</text>
+        <feedback>
+            <text>This value has the wrong sign. β-sheets typically have a phi angle of -120°, not +120°.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Beta Sheet Psi Angle</text>
+    </name>
+    <questiontext format="html">
+        <text>What is the typical psi (ψ) angle for residues in a β-sheet?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The psi (ψ) angle is the second main backbone dihedral angle in protein structures. In β-sheets, this angle has a characteristic value that helps maintain the extended conformation of the strands.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>-60°</text>
+        <feedback>
+            <text>This value is not typical for β-sheets. -60° is more commonly associated with other secondary structures.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>+60°</text>
+        <feedback>
+            <text>While +60° is observed in some protein structures, it's not the characteristic psi angle for β-sheets.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>-120°</text>
+        <feedback>
+            <text>This value is incorrect. β-sheets typically have a positive psi angle, not negative.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>+135°</text>
+        <feedback>
+            <text>Correct! The psi angle in β-sheets is typically around +135°, which helps create the characteristic extended conformation.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Color Chains Command</text>
+    </name>
+    <questiontext format="html">
+        <text>What does the PyMOL command "util.color_chains" do?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>PyMOL provides various utilities for coloring molecular structures. Understanding these commands is essential for creating clear and informative visualizations.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0">
+        <text>Colors all amino acids the same</text>
+        <feedback>
+            <text>This is incorrect. This command actually assigns different colors to different chains, not the same color to all amino acids.</text>
+        </feedback>
+    </answer>
+    <answer fraction="100">
+        <text>Assigns different colors to different protein chains</text>
+        <feedback>
+            <text>Correct! This command automatically assigns different colors to different chains in the protein structure, making it easier to distinguish between them.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Makes the entire protein rainbow colored</text>
+        <feedback>
+            <text>This is incorrect. Rainbow coloring is achieved using different commands like "spectrum". util.color_chains assigns different colors to different chains.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>Colors based on secondary structure</text>
+        <feedback>
+            <text>This is incorrect. Coloring by secondary structure uses different commands. util.color_chains specifically colors different chains differently.</text>
+        </feedback>
+    </answer>
+</question>
+
+<question type="multichoice">
+    <name>
+        <text>Alpha Helix Phi Angle</text>
+    </name>
+    <questiontext format="html">
+        <text>In an α-helix, what is the typical phi (φ) angle?</text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text>The phi angle is one of the two main backbone dihedral angles that define protein secondary structure. In α-helices, this angle adopts a characteristic value that can be measured using PyMOL's measurement tools.</text>
+    </generalfeedback>
+    <defaultgrade>1.0</defaultgrade>
+    <penalty>0.33</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+        <text>-60°</text>
+        <feedback>
+            <text>Correct! The phi angle in α-helices is typically around -60°. This value helps create the characteristic helical shape.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>+60°</text>
+        <feedback>
+            <text>This value has the wrong sign. α-helices typically have a phi angle of -60°, not +60°.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>-120°</text>
+        <feedback>
+            <text>This value is more typical for β-sheets. α-helices have a phi angle closer to -60°.</text>
+        </feedback>
+    </answer>
+    <answer fraction="0">
+        <text>+120°</text>
+        <feedback>
+            <text>This value is incorrect for α-helices. The typical phi angle is -60°.</text>
+        </feedback>
+    </answer>
+</question>
+
+
+</quiz>

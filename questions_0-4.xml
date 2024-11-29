@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Question about H-bond distances in beta sheets -->
+<question type="multichoice">
+    <name>
+        <text>H-bonds beta sheet II</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p>What is the expected range of hydrogen bond distances when measuring between beta sheets in a protein structure?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>Hydrogen bond distances in β-sheets are fundamental measurements that help us understand protein stability and structure validation. These distances are highly conserved across different proteins because they represent optimal geometry for hydrogen bonding while maintaining the characteristic extended conformation of β-sheets. When measuring these distances in PyMOL, it's important to remember that we're looking at the distance between donor and acceptor atoms, not including the hydrogen atom itself.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p>2.3 - 3.2 Å</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! This range represents the optimal distance for hydrogen bonds in β-sheets. At these distances, the interaction is strong enough to stabilize the structure while maintaining proper geometry. This tight range of values is one reason why β-sheets are such stable and regular structures in proteins. When you measure these distances in PyMOL between properly paired strands, you should consistently find values in this range.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>3.8 - 4.2 Å</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. This distance range is too long for effective hydrogen bonding in β-sheets. While you might occasionally see distances like this between adjacent strands, they represent weaker interactions than the optimal hydrogen bonds that typically stabilize β-sheets. For reference, this is closer to the distance between consecutive Cα atoms in a polypeptide chain (3.8 Å).</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>1.5 - 2.5 Å</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While this range includes some valid hydrogen bond distances at its upper end, the lower values are too short for typical protein hydrogen bonds. Distances around 1.5 Å are more characteristic of covalent bonds. Remember that hydrogen bonds are longer-range interactions than covalent bonds.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p>4.8 - 5.2 Å</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. These distances are far too long for hydrogen bonds in β-sheets. At such distances, the electronic interaction between donor and acceptor atoms would be too weak to provide meaningful structural stabilization. When you see distances this long in PyMOL, you're likely measuring between atoms that aren't actually forming a hydrogen bond.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+<!-- Question about selecting residues in PyMOL -->
+<question type="multichoice">
+    <name>
+        <text>select residues</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p>In PyMOL, which command would you use to select and highlight residues 44 to 48 in chain A?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>PyMOL's selection syntax is a powerful tool for analyzing specific parts of protein structures. Understanding how to properly construct selection commands is crucial for detailed structural analysis. The syntax follows a logical pattern where you can combine different selection criteria using operators like 'and' and 'or'. The selection name you create becomes a new object that you can manipulate independently.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p><code>select res_44_48, chain A and resi 44-48</code></p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! This command correctly uses PyMOL's selection syntax. Let's break it down:
+            - 'select res_44_48' creates a new selection named 'res_44_48'
+            - 'chain A' specifies which chain to select from
+            - 'and' combines the chain and residue criteria
+            - 'resi 44-48' specifies the residue numbers
+            The comma separates the selection name from the selection criteria.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p><code>highlight chain A and resi 44 to 48</code></p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. This command has several problems:
+            - 'highlight' is not a valid PyMOL selection command
+            - 'to' is not the correct syntax for specifying a range (use hyphen instead)
+            - The selection needs a name specified at the start
+            The correct format should use 'select' and give the selection a name.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p><code>pick residues 44 to 48 in chain A</code></p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. This command attempts to use natural language, but PyMOL requires specific syntax:
+            - 'pick' is used for clicking, not selecting regions
+            - 'residues' should be 'resi'
+            - 'in' is not a valid PyMOL operator (use 'and' instead)
+            - The selection needs a name</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p><code>mark chain A residues from 44 to 48</code></p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. This command has multiple syntax errors:
+            - 'mark' is not a valid PyMOL selection command
+            - The range syntax is incorrect
+            - The selection needs a name
+            - The word 'residues' should be 'resi'
+            Remember that PyMOL uses specific keywords and syntax for selections.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+</quiz>

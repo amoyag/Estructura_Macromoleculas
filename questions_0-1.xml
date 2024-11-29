@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- First question -->
+<question type="multichoice">
+    <name>
+        <text>Dihedrals phi psi</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">What are the values of the ϕ and ψ dihedral angles in the <strong><span class="" style="font-family: &quot;Courier New&quot;, Courier, mono;">peptide</span></strong> object?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>Dihedral angles (ϕ and ψ) are crucial parameters that define protein backbone conformation. They represent the rotation around bonds in the protein backbone. The phi (ϕ) angle is measured around the N-Cα bond, while the psi (ψ) angle is measured around the Cα-C bond. In PyMOL, these can be measured using the Measurement Wizard by selecting four consecutive atoms that define each angle.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">ϕ = 172.8; ψ = 140.1</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! These values are typical for a β-sheet conformation, which typically has ϕ values around 180° and ψ values around 140°. These angles allow the polypeptide chain to adopt an extended conformation characteristic of β-sheets.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">ϕ = 45.3; ψ = -32.5</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. These values are neither typical for α-helices (ϕ ≈ -60°, ψ ≈ -45°) nor β-sheets (ϕ ≈ -120°, ψ ≈ 140°). When measuring dihedral angles in PyMOL, make sure to select the correct atoms in the proper order.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">ϕ = 194.6; ψ = 160.3</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. While these values are somewhat similar to β-sheet values, they're not the actual measurements for this peptide. Remember that dihedral angles are typically reported in the range -180° to +180°.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">ϕ = 74.5; ψ = 172.8</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. These values don't correspond to any typical secondary structure conformation. When measuring dihedral angles, ensure you're selecting the correct sequence of atoms: C-N-Cα-C for ϕ and N-Cα-C-N for ψ.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+<!-- Second question -->
+<question type="multichoice">
+    <name>
+        <text>H-bonds</text>
+    </name>
+    <questiontext format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">When using PyMOL to visualize a hydrogen bond, which two atoms would you typically select to measure the H-bond distance?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+        <text><![CDATA[<p>Hydrogen bonds are essential interactions that stabilize protein secondary structures. While they involve three atoms (donor-hydrogen-acceptor), in protein structures we typically measure the distance between the donor and acceptor atoms since hydrogen atoms are usually not visible in X-ray crystallography.</p>]]></text>
+    </generalfeedback>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">Carbon and Oxygen</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. Carbon atoms don't typically form hydrogen bonds as they lack the electronegativity required. In protein structures, hydrogen bonds primarily form between N-H groups (donor) and C=O groups (acceptor).</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">Nitrogen and Oxygen</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Correct! In protein structures, hydrogen bonds typically form between the N-H group (where N is the donor) and C=O group (where O is the acceptor). The N-O distance is commonly used as a measure of hydrogen bond length since hydrogen atoms are usually not visible in crystal structures.</p>]]></text>
+        </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+        <text><![CDATA[<p dir="ltr" style="text-align: left;">Carbon and Nitrogen</p>]]></text>
+        <feedback format="html">
+            <text><![CDATA[<p>Incorrect. Neither carbon nor nitrogen alone typically acts as a hydrogen bond acceptor. In proteins, the oxygen of the carbonyl group (C=O) is the typical hydrogen bond acceptor.</p>]]></text>
+        </feedback>
+    </answer>
+</question>
+
+
+</quiz>
